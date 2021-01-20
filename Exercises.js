@@ -9,14 +9,13 @@ function myReverse(str) {
 function allCombinations(str) {
   let combinations = [];
   // your code here
-  let splitted = str.split('')
   for(i = 0 ; i < str.length ; i++){
-    for(j = i + 1 ; j < str.length ; j++){
+    for(j = i + 1 ; j < str.length + 1 ; j++){
       combinations.push(str.slice(i,j));
     }
   }
   //
-  return combinations;
+  return combinations; 
 }
 
 //Question 3
@@ -62,7 +61,7 @@ function isPrefectNumber(num) {
 
 // *** Playground ***
 // Feel free to run and test your code here on your own
-
+console.log(allCombinations('dog'));
 // *** End of Playground ***
 
 // Don't touch me :)
